@@ -1,10 +1,15 @@
 {
-  "name": "COMP3104",
+  "name": "comp3104",
   "version": "1.0.0",
-  "description": "",
+  "description": "Jillian Trafford",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Warning: No tests created yet\""
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
+    "test": "echo \"Warning: No tests created yet.\"",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -16,5 +21,22 @@
   "bugs": {
     "url": "https://github.com/ji8498/COMP3104/issues"
   },
-  "homepage": "https://github.com/ji8498/COMP3104#readme"
+  "homepage": "https://github.com/ji8498/COMP3104#readme",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-scripts": "^2.1.5",
+    "travis": "^0.1.1",
+    "yarn": "^1.22.17"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
